@@ -8,6 +8,7 @@ const mongoose = require('mongoose');
 const app = express();
 const users = require('./routes/users');
 const brands = require('./routes/brands');
+const categories = require('./routes/categories');
 const config = require('./config/database');
 
 
@@ -57,6 +58,9 @@ app.use('/users', users);
 
 // Add And Remove Brand
 app.use('/brands', brands);
+
+// Add and remove category
+app.use('/categories', categories);
 
 // Index Route
 app.get('/', (req, res) => {
