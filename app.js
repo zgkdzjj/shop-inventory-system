@@ -1,3 +1,5 @@
+
+
 const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
@@ -9,30 +11,48 @@ const app = express();
 const users = require('./routes/users');
 const brands = require('./routes/brands');
 const categories = require('./routes/categories');
+const products = require('./routes/products');
 const config = require('./config/database');
+const Grid = require('gridfs-stream');
 
 
 // Managing the Mongoose connection
 // Create the database connection
 mongoose.connect(config.database);
 
+const conn = mongoose.connection;
 
+//module.exports.db = mongoose.connection.db;
+
+
+//Grid.mongo = mongoose.mongo;
+//const gfs = module.exports = Grid(mongoose.connection.db);
 
 // CONNECTION EVENTS
 //When successfully connected
+mongoose.connection.once("open", () => {
+    console.log('Mongoose default connection  once open to ' + config.database);
+
+
+    //console.log('gfs => ' + JSON.stringify(gfs, null, 4));
+});
 mongoose.connection.on('connected', () => {
     console.log('Mongoose default connection open to ' + config.database);
+
 });
 
 // If the connection throws an error
 mongoose.connection.on('error', (err)=> {
     console.log('Mogoose default connection error:r ' + err);
+
 });
 
 // When the connection is disconnected
 mongoose.connection.on('disconnected', () => {
     console.log('Mogoose default connection disconnected')
 });
+
+//app.set('mongoInstance', mongoose.connection.db);
 
 const port = 3000;
 
@@ -62,6 +82,9 @@ app.use('/brands', brands);
 // Add and remove category
 app.use('/categories', categories);
 
+// Add and remove products
+app.use('/products', products);
+
 // Index Route
 app.get('/', (req, res) => {
     res.send('Invalid Endpoint')
@@ -72,3 +95,4 @@ app.listen(port,() => {
     console.log('Server started on port ' + port)
 });
 
+module.exports = conn;
