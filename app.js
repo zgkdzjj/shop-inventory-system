@@ -13,29 +13,19 @@ const brands = require('./routes/brands');
 const categories = require('./routes/categories');
 const products = require('./routes/products');
 const config = require('./config/database');
-const Grid = require('gridfs-stream');
+
 
 
 // Managing the Mongoose connection
 // Create the database connection
 mongoose.connect(config.database);
 
-const conn = mongoose.connection;
-
-//module.exports.db = mongoose.connection.db;
 
 
-//Grid.mongo = mongoose.mongo;
-//const gfs = module.exports = Grid(mongoose.connection.db);
+
 
 // CONNECTION EVENTS
 //When successfully connected
-mongoose.connection.once("open", () => {
-    console.log('Mongoose default connection  once open to ' + config.database);
-
-
-    //console.log('gfs => ' + JSON.stringify(gfs, null, 4));
-});
 mongoose.connection.on('connected', () => {
     console.log('Mongoose default connection open to ' + config.database);
 
@@ -95,4 +85,3 @@ app.listen(port,() => {
     console.log('Server started on port ' + port)
 });
 
-module.exports = conn;

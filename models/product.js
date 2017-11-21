@@ -1,12 +1,14 @@
 const mongoose = require('mongoose');
+const fs = require('fs');
 const Grid = require('gridfs-stream');
+
 
 // Define product schema
 const ProductSchema = mongoose.Schema({
-    //prodImg: {data: Buffer, contentType: String},
+    prodImgName: {type: String},
     prodName: {type: String},
-    prodQantity: {type: Number},
-    prodRate: {type:String},
+    prodQuantity: {type: Number},
+    prodRate: {type: Number},
     prodBrand: {type: String},
     prodCat: {type: String},
     prodStatus: {type: String}
@@ -14,6 +16,8 @@ const ProductSchema = mongoose.Schema({
 
 // Define product model
 const Product = module.exports = mongoose.model('Product', ProductSchema);
+
+
 
 module.exports.listAllProd = function (callback) {
     Product.find({}, callback);

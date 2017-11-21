@@ -56,7 +56,7 @@ router.delete('/:brandID', (req, res, next) => {
 // Update A Brand
 router.put('/:brandID', (req, res, next) => {
     let updatedBrand = req.body;
-    console.log('newBrand => ' + updatedBrand);
+    console.log('newBrand => ' + JSON.stringify(updatedBrand, null, 4));
     Brand.updateBrand(req.params.brandID, updatedBrand,(err, brand) => {
         if (err) {
             console.log(err);

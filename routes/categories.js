@@ -23,7 +23,7 @@ router.post('/', (req, res, next) => {
 router.get('/', (req, res, next) => {
     Category.listAllCat((err, cat) => {
         if (err) {
-            res.json({success: false, msg: 'faided to list all categories', data: err});
+            res.json({success: false, msg: 'failded to list all categories', data: err});
         } else {
             res.json({success: true, msg: 'All Categories loaded', data: cat});
         }
@@ -56,7 +56,7 @@ router.delete('/:catID', (req, res, next) => {
 // Update a category
 router.put('/:catID', (req, res, next) => {
     let updatedCat = req.body;
-    console.log('updated category => ' + updatedCat);
+    console.log('updated category => ' + JSON.stringify(updatedCat, null, 4));
     Category.updateCat(req.params.catID, updatedCat, (err, cat) => {
         if (err) {
             res.json({success: false, msg: 'Failed to update the category', data: err});
