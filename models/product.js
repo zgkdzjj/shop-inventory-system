@@ -11,7 +11,10 @@ const ProductSchema = mongoose.Schema({
     prodRate: {type: Number},
     prodBrand: {type: String},
     prodCat: {type: String},
-    prodStatus: {type: String}
+    prodStatus: {type: String},
+    //prodImg: { data: Buffer, contentType: String },
+    prodSpecs: {type: String},
+    //prodColor: {type: String}
 });
 
 // Define product model
@@ -23,9 +26,17 @@ module.exports.listAllProd = function (callback) {
     Product.find({}, callback);
 };
 
+module.exports.getAllImg = function (callback) {
+
+};
+
 module.exports.getProdByID = function (id, callback) {
     Product.findById(id, callback);
 };
+
+module.exports.getImgByID = function (id, callback) {
+    
+}
 
 module.exports.getProdByName = function (prodName, callback) {
     const query = {prodName: prodName};
@@ -41,5 +52,5 @@ module.exports.removeProd = function (id, callback) {
 };
 
 module.exports.updateProd = function (id, updatedProd, callback) {
-    Product.findOneAndUpdate({_id: id}, updatedProd, {new: true}, callback);
+    Product.findOneAndUpdate({_id: id}, updatedProd, {new: false}, callback);
 }

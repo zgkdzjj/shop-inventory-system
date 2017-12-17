@@ -12,6 +12,7 @@ const users = require('./routes/users');
 const brands = require('./routes/brands');
 const categories = require('./routes/categories');
 const products = require('./routes/products');
+const orders = require('./routes/orders');
 const config = require('./config/database');
 
 
@@ -74,6 +75,9 @@ app.use('/categories', categories);
 
 // Add and remove products
 app.use('/products', products);
+
+// Add and remove orders
+app.use('/orders', orders);
 
 // Index Route
 app.get('/', (req, res) => {

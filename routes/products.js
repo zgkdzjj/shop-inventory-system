@@ -5,6 +5,8 @@ const Product = require('../models/product');
 const mongoose = require('mongoose');
 const fs = require('fs');
 const conn = mongoose.connection;
+const products = [];
+
 
 const Grid = require('gridfs-stream');
 const upload = multer({
@@ -19,53 +21,71 @@ Grid.mongo = mongoose.mongo;
 
 // Check Connection to db
 conn.once('open', () => {
-    //const gfs = Grid(conn.db);
+    var gfs = Grid(conn.db);
     console.log('connection open');
 
     // Add Product
     router.post('/', upload.single('avatar'), (req, res, next) => {
-
         console.log('req.file => ' + JSON.stringify(req.file, null, 4));
         console.log('req.body => ' + JSON.stringify(req.body, null, 4));
+
         if (req.file == undefined) {
-            res.json({success: false, msg: 'No File Selected'});
-        }
-        else {
-            let newProd = new Product({
+            var newProd = new Product({
+                //prodImgName: req.file.filename,
+                prodName: req.body.prodName,
+                prodQuantity: req.body.prodQuantity,
+                prodRate: req.body.prodRate,
+                prodBrand: req.body.prodBrand,
+                prodCat: req.body.prodCat,
+                prodStatus: req.body.prodStatus,
+                prodSpecs: req.body.prodSpecs
+            });
+        } else {
+            var newProd = new Product({
                 prodImgName: req.file.filename,
                 prodName: req.body.prodName,
                 prodQuantity: req.body.prodQuantity,
                 prodRate: req.body.prodRate,
                 prodBrand: req.body.prodBrand,
                 prodCat: req.body.prodCat,
-                prodStatus: req.body.prodStatus
-            });
-            let path = './uploads/' + req.file.filename;
-            console.log('newProd ' + newProd);
-
-            // Add product to db
-            Product.addProd(newProd, (err) => {
-                if (err) {
-                    res.end(JSON.stringify({success: false, msg: 'failed to add the product'}));
-                    console.log('failed to add the product info')
-
-                } else {
-                    console.log('product info added');
-                    console.log('path => ' + path);
-                    saveFileToDB(path, req, res);
-                }
+                prodStatus: req.body.prodStatus,
+                prodSpecs: req.body.prodSpecs
             });
         }
+        console.log('newProd => ' + newProd);
+
+        // Add product to db
+        Product.addProd(newProd, (err) => {
+            if (err) {
+                res.end(JSON.stringify({success: false, msg: 'failed to add the product'}));
+                console.log('failed to add the product info')
+
+            } else {
+                console.log('product info added');
+                if (req.file == undefined) {
+                    res.json({success: true, msg: 'Product info has been added, but image file not selected'})
+                } else {
+                    let path = './uploads/' + req.file.filename;
+                    saveFileToDB(path, req, res);
+                }
+
+            }
+        });
+        //}
     });
 
     // Get all products
     router.get('/', (req, res, next) => {
+        var buffer = "";
         Product.listAllProd((err, prod) => {
+            //var products = new Array();
             if (err) {
                 res.json({success: false, msg: 'failed to get all product from db', data: err});
 
             } else {
+                console.log('prod.data => ' + JSON.stringify(prod, null, 4));
                 res.json({success: true, msg: 'All products loaded', data: prod});
+                //products.length = 0;
             }
         })
     });
@@ -81,9 +101,34 @@ conn.once('open', () => {
         })
     });
 
+    // get a product's image
+    router.get('/images/:imgName', (req, res, next) => {
+
+        conn.collection('fs.files').findOne({filename: req.params.imgName}, (err, file) => {
+            if (err) {
+                res.json({success: false, msg: 'Loading file error', data: err});
+            } else {
+                if (file == undefined) {
+                    console.log('file undefined');
+                    res.json({success: false, msg: 'Cannot find the image file.', data: null});
+
+                } else {
+                    console.log('file => ' + JSON.stringify(file, null, 4));
+                    conn.collection('fs.chunks').findOne({files_id: file._id}, (err, imgChunks) => {
+                        if (err) throw err;
+                        //console.log('doc => ' + JSON.stringify(doc, null, 4));
+                        res.json({success: true, msg: 'image file loaded', data: imgChunks});
+                    });
+                }
+
+
+            }
+        });
+    });
+
     // remove a product
     router.delete('/:prodID', (req, res, next) => {
-        var gfs = Grid(conn.db);
+        //var gfs = Grid(conn.db);
         Product.removeProd(req.params.prodID, (err, prod) => {
             if (err) {
                 res.json({success: false, msg: 'Failed to remove the product', data: err});
@@ -102,26 +147,54 @@ conn.once('open', () => {
 
     // update a product
     router.put('/:prodID', upload.single('avatar'), (req, res, next) => {
-        var gfs = Grid(conn.db);
+        //var gfs = Grid(conn.db);
         let updatedProd = req.body;
-        let path = './uploads/' + req.file.filename;
-        updatedProd.prodImgName = req.file.filename;
         console.log('updated product => ' + JSON.stringify(req.body, null, 4));
-        Product.updateProd(req.params.prodID, updatedProd, (err, prod) => {
-            if (err) {
-                res.json({success: false, msg: 'Failed to update the product', data: err});
-            } else {
-                // Save the new image to the db
-                saveFileToDB(path, req, res);
-                // remove the old image from the db
-                gfs.remove({filename: prod.prodImgName}, (err) => {
-                    if (err) throw err;
-                })
+        if (req.file == undefined) {
+            Product.updateProd(req.params.prodID, updatedProd, (err, prod) => {
+                if (err) {
+                    res.json({success: false, msg: 'Failed to update the product', data: err});
+                } else {
+                    res.json({success: true, msg: 'Product updated ', data: prod});
 
-            }
-        });
+                }
+            });
+
+        } else {
+            let path = './uploads/' + req.file.filename;
+            updatedProd.prodImgName = req.file.filename;
+            console.log('req.file => ' + JSON.stringify(req.file, null, 4));
+            Product.updateProd(req.params.prodID, updatedProd, (err, prod) => {
+                console.log('prod => ' + prod);
+                if (err) {
+                    res.json({success: false, msg: 'Failed to update the product', data: err});
+                } else {
+                    // Save the new image to the db
+                    saveFileToDB(path, req, res);
+                    // remove the old image from the db
+                    if (prod.prodImgName == undefined) {
+                        console.log('No old images needed to be removed');
+                    } else {
+                        console.log('before removed prodImgName => ' + prod.prodImgName);
+                        gfs.remove({filename: prod.prodImgName}, (err) => {
+                            if (err) {
+                                throw err
+                            }
+                            else {
+                                console.log('Old images removed.');
+                            }
+                        })
+                    }
+
+
+                }
+            });
+
+        }
+
     });
 });
+
 
 // Upload File to the DB
 function saveFileToDB(path, req, res) {
