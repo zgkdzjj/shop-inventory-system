@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a3f91dcd-b33a-465e-b6fa-15e809a1922f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-src" afterPath="$PROJECT_DIR$/angular-src" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -105,7 +104,7 @@
         <entry file="file://$PROJECT_DIR$/angular-src/src/app/components/manageorder/manageorder.component.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="396">
-              <caret line="129" column="0" lean-forward="true" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
+              <caret line="129" column="0" lean-forward="false" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
               <folding>
                 <element signature="e#0#50#0" expanded="true" />
               </folding>
@@ -127,7 +126,7 @@
         <entry file="file://$PROJECT_DIR$/angular-src/src/app/models/Order.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="152">
-              <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+              <caret line="8" column="21" lean-forward="false" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -157,7 +156,7 @@
         <entry file="file://$PROJECT_DIR$/angular-src/src/app/components/order/order.component.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="4750">
-              <caret line="250" column="12" lean-forward="true" selection-start-line="248" selection-start-column="25" selection-end-line="250" selection-end-column="12" />
+              <caret line="250" column="12" lean-forward="false" selection-start-line="248" selection-start-column="25" selection-end-line="250" selection-end-column="12" />
               <folding>
                 <element signature="e#0#48#0" expanded="true" />
                 <element signature="e#488#528#0" expanded="true" />
@@ -195,7 +194,7 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/angular-src" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -521,7 +520,7 @@
       <workItem from="1513565526355" duration="4648000" />
       <workItem from="1513599689252" duration="1849000" />
       <workItem from="1513632919251" duration="7247000" />
-      <workItem from="1513683894084" duration="2799000" />
+      <workItem from="1513683894084" duration="2941000" />
     </task>
     <task id="LOCAL-00001" summary="Login Part Finished. The back-end of the brand added.">
       <created>1509016308108</created>
@@ -607,11 +606,18 @@
       <option name="project" value="LOCAL" />
       <updated>1513687091042</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Add manager order function.">
+      <created>1513687386937</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1513687386937</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="538841000" />
+    <option name="totallyTimeSpent" value="538983000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -964,7 +970,7 @@
     <entry file="file://$PROJECT_DIR$/angular-src/src/app/models/Order.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
-          <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+          <caret line="8" column="21" lean-forward="false" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
           <folding />
         </state>
       </provider>
@@ -992,7 +998,7 @@
     <entry file="file://$PROJECT_DIR$/angular-src/src/app/components/order/order.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4750">
-          <caret line="250" column="12" lean-forward="true" selection-start-line="248" selection-start-column="25" selection-end-line="250" selection-end-column="12" />
+          <caret line="250" column="12" lean-forward="false" selection-start-line="248" selection-start-column="25" selection-end-line="250" selection-end-column="12" />
           <folding>
             <element signature="e#0#48#0" expanded="true" />
             <element signature="e#488#528#0" expanded="true" />
@@ -1051,7 +1057,7 @@
     <entry file="file://$PROJECT_DIR$/angular-src/src/app/components/manageorder/manageorder.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
-          <caret line="129" column="0" lean-forward="true" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
+          <caret line="129" column="0" lean-forward="false" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
           </folding>
