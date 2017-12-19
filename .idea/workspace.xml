@@ -55,7 +55,7 @@
             <file leaf-file-name="order.service.ts" pinned="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/angular-src/src/app/services/order.service.ts">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="417">
+                  <state relative-caret-position="912">
                     <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
                     <folding>
                       <element signature="e#0#43#0" expanded="true" />
@@ -67,7 +67,7 @@
             <file leaf-file-name="product.component.html" pinned="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/angular-src/src/app/components/product/product.component.html">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="182">
+                  <state relative-caret-position="1615">
                     <caret line="85" column="35" lean-forward="false" selection-start-line="85" selection-start-column="20" selection-end-line="85" selection-end-column="35" />
                     <folding>
                       <element signature="n#style#0;n#span#0;n#div#0;n#p-header#0;n#p-panel#0;n#!!top" expanded="true" />
@@ -79,7 +79,7 @@
             <file leaf-file-name="order.component.html" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/angular-src/src/app/components/order/order.component.html">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="352">
+                  <state relative-caret-position="379">
                     <caret line="197" column="69" lean-forward="false" selection-start-line="197" selection-start-column="68" selection-end-line="197" selection-end-column="69" />
                     <folding />
                   </state>
@@ -96,7 +96,7 @@
       <file leaf-file-name="manageorder.component.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/angular-src/src/app/components/manageorder/manageorder.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="431">
+            <state relative-caret-position="2033">
               <caret line="107" column="52" lean-forward="false" selection-start-line="107" selection-start-column="52" selection-end-line="107" selection-end-column="52" />
               <folding />
             </state>
@@ -107,7 +107,7 @@
         <entry file="file://$PROJECT_DIR$/angular-src/src/app/components/product/product.component.spec.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="40" lean-forward="true" selection-start-line="0" selection-start-column="40" selection-end-line="0" selection-end-column="40" />
+              <caret line="0" column="40" lean-forward="false" selection-start-line="0" selection-start-column="40" selection-end-line="0" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -116,7 +116,7 @@
       <file leaf-file-name="product.component.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/angular-src/src/app/components/product/product.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="794">
+            <state relative-caret-position="1102">
               <caret line="65" column="49" lean-forward="false" selection-start-line="65" selection-start-column="22" selection-end-line="65" selection-end-column="55" />
               <folding />
             </state>
@@ -188,7 +188,7 @@
       <file leaf-file-name="order.component.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/angular-src/src/app/components/order/order.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
+            <state relative-caret-position="4750">
               <caret line="250" column="12" lean-forward="true" selection-start-line="248" selection-start-column="25" selection-end-line="250" selection-end-column="12" />
               <folding>
                 <element signature="e#0#48#0" expanded="true" />
@@ -432,8 +432,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -597,7 +597,8 @@
       <workItem from="1513466669602" duration="9001000" />
       <workItem from="1513565526355" duration="4648000" />
       <workItem from="1513599689252" duration="1849000" />
-      <workItem from="1513632919251" duration="7112000" />
+      <workItem from="1513632919251" duration="7247000" />
+      <workItem from="1513683894084" duration="155000" />
     </task>
     <task id="LOCAL-00001" summary="Login Part Finished. The back-end of the brand added.">
       <created>1509016308108</created>
@@ -662,11 +663,18 @@
       <option name="project" value="LOCAL" />
       <updated>1513478405674</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Add manager order function.">
+      <created>1513683728685</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1513683728685</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="535907000" />
+    <option name="totallyTimeSpent" value="536197000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -683,12 +691,12 @@
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16113745" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286991" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.305859" sideWeight="0.50394946" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31479642" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.305859" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.305859" sideWeight="0.49605057" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39920557" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -732,7 +740,8 @@
     <MESSAGE value="Add  image uploading parts for products." />
     <MESSAGE value="Backend: Add products finished" />
     <MESSAGE value="Add order function." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add order function." />
+    <MESSAGE value="Add manager order function." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add manager order function." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -883,7 +892,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1024,17 +1032,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/angular-src/src/app/models/OProduct.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="17" lean-forward="false" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/angular-src/src/app/components/product/product.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
+        <state relative-caret-position="1615">
           <caret line="85" column="35" lean-forward="false" selection-start-line="85" selection-start-column="20" selection-end-line="85" selection-end-column="35" />
           <folding>
             <element signature="n#style#0;n#span#0;n#div#0;n#p-header#0;n#p-panel#0;n#!!top" expanded="true" />
@@ -1044,7 +1044,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/angular-src/src/app/services/order.service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
+        <state relative-caret-position="912">
           <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
           <folding>
             <element signature="e#0#43#0" expanded="true" />
@@ -1054,7 +1054,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/angular-src/src/app/components/order/order.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
+        <state relative-caret-position="4750">
           <caret line="250" column="12" lean-forward="true" selection-start-line="248" selection-start-column="25" selection-end-line="250" selection-end-column="12" />
           <folding>
             <element signature="e#0#48#0" expanded="true" />
@@ -1065,7 +1065,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/angular-src/src/app/components/order/order.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
+        <state relative-caret-position="379">
           <caret line="197" column="69" lean-forward="false" selection-start-line="197" selection-start-column="68" selection-end-line="197" selection-end-column="69" />
           <folding />
         </state>
@@ -1073,7 +1073,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/angular-src/src/app/components/manageorder/manageorder.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
+        <state relative-caret-position="2033">
           <caret line="107" column="52" lean-forward="false" selection-start-line="107" selection-start-column="52" selection-end-line="107" selection-end-column="52" />
           <folding />
         </state>
@@ -1082,15 +1082,7 @@
     <entry file="file://$PROJECT_DIR$/angular-src/src/app/components/product/product.component.spec.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="40" lean-forward="true" selection-start-line="0" selection-start-column="40" selection-end-line="0" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular-src/src/app/components/product/product.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="794">
-          <caret line="65" column="49" lean-forward="false" selection-start-line="65" selection-start-column="22" selection-end-line="65" selection-end-column="55" />
+          <caret line="0" column="40" lean-forward="false" selection-start-line="0" selection-start-column="40" selection-end-line="0" selection-end-column="40" />
           <folding />
         </state>
       </provider>
@@ -1099,6 +1091,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
           <caret line="24" column="3" lean-forward="false" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-src/src/app/components/product/product.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1102">
+          <caret line="65" column="49" lean-forward="false" selection-start-line="65" selection-start-column="22" selection-end-line="65" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-src/src/app/models/OProduct.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="17" lean-forward="false" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
           <folding />
         </state>
       </provider>
