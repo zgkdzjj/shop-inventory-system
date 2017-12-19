@@ -1,42 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a3f91dcd-b33a-465e-b6fa-15e809a1922f" name="Default" comment="">
+    <list default="true" id="a3f91dcd-b33a-465e-b6fa-15e809a1922f" name="Default" comment="Add manager order function.">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular-src/src/app/components/product/add_product.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular-src/src/app/components/brand/brand.component.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular-src/src/app/components/brand/brand.component.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular-src/src/app/components/brand/brand.component.spec.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular-src/src/app/components/brand/brand.component.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular-src/src/app/components/category/category.component.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular-src/src/app/components/category/category.component.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular-src/src/app/components/category/category.component.spec.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular-src/src/app/components/category/category.component.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular-src/src/app/components/dialogs/add-brand-dialog/add-brand-dialog.component.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular-src/src/app/components/dialogs/add-brand-dialog/add-brand-dialog.component.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular-src/src/app/components/dialogs/add-brand-dialog/add-brand-dialog.component.spec.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular-src/src/app/components/dialogs/add-brand-dialog/add-brand-dialog.component.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular-src/src/app/components/manageorder/manageorder.component.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular-src/src/app/components/manageorder/manageorder.component.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular-src/src/app/components/manageorder/manageorder.component.spec.ts" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular-src/src/app/components/manageorder/manageorder.component.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular-src/src/app/components/order/order.component.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular-src/src/app/components/order/order.component.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular-src/src/app/components/order/order.component.spec.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular-src/src/app/components/order/order.component.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular-src/src/app/components/product/product.component.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular-src/src/app/components/product/product.component.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular-src/src/app/components/product/product.component.spec.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular-src/src/app/components/product/product.component.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular-src/src/app/services/brand.service.spec.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular-src/src/app/services/brand.service.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular-src/src/app/services/category.service.spec.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular-src/src/app/services/category.service.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular-src/src/app/services/order.service.spec.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular-src/src/app/services/order.service.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular-src/src/app/services/product.service.spec.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular-src/src/app/services/product.service.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bcryptjs/.npmignore" afterPath="$PROJECT_DIR$/node_modules/bcryptjs/.npmignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bcryptjs/.travis.yml" afterPath="$PROJECT_DIR$/node_modules/bcryptjs/.travis.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bcryptjs/.vscode/settings.json" afterPath="$PROJECT_DIR$/node_modules/bcryptjs/.vscode/settings.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bcryptjs/LICENSE" afterPath="$PROJECT_DIR$/node_modules/bcryptjs/LICENSE" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bcryptjs/README.md" afterPath="$PROJECT_DIR$/node_modules/bcryptjs/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bcryptjs/bin/bcrypt" afterPath="$PROJECT_DIR$/node_modules/bcryptjs/bin/bcrypt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bcryptjs/bower.json" afterPath="$PROJECT_DIR$/node_modules/bcryptjs/bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bcryptjs/dist/README.md" afterPath="$PROJECT_DIR$/node_modules/bcryptjs/dist/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bcryptjs/dist/bcrypt.js" afterPath="$PROJECT_DIR$/node_modules/bcryptjs/dist/bcrypt.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bcryptjs/externs/bcrypt.js" afterPath="$PROJECT_DIR$/node_modules/bcryptjs/externs/bcrypt.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bcryptjs/externs/minimal-env.js" afterPath="$PROJECT_DIR$/node_modules/bcryptjs/externs/minimal-env.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bcryptjs/index.js" afterPath="$PROJECT_DIR$/node_modules/bcryptjs/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bcryptjs/scripts/build.js" afterPath="$PROJECT_DIR$/node_modules/bcryptjs/scripts/build.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bcryptjs/src/bcrypt.js" afterPath="$PROJECT_DIR$/node_modules/bcryptjs/src/bcrypt.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bcryptjs/src/bcrypt/impl.js" afterPath="$PROJECT_DIR$/node_modules/bcryptjs/src/bcrypt/impl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bcryptjs/src/bcrypt/prng/README.md" afterPath="$PROJECT_DIR$/node_modules/bcryptjs/src/bcrypt/prng/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bcryptjs/src/bcrypt/prng/accum.js" afterPath="$PROJECT_DIR$/node_modules/bcryptjs/src/bcrypt/prng/accum.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bcryptjs/src/bcrypt/prng/isaac.js" afterPath="$PROJECT_DIR$/node_modules/bcryptjs/src/bcrypt/prng/isaac.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bcryptjs/src/bcrypt/util.js" afterPath="$PROJECT_DIR$/node_modules/bcryptjs/src/bcrypt/util.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bcryptjs/src/bcrypt/util/base64.js" afterPath="$PROJECT_DIR$/node_modules/bcryptjs/src/bcrypt/util/base64.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bcryptjs/src/bower.json" afterPath="$PROJECT_DIR$/node_modules/bcryptjs/src/bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bcryptjs/src/wrap.js" afterPath="$PROJECT_DIR$/node_modules/bcryptjs/src/wrap.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bcryptjs/tests/suite.js" afterPath="$PROJECT_DIR$/node_modules/bcryptjs/tests/suite.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/isemail/.npmignore" afterPath="$PROJECT_DIR$/node_modules/isemail/.npmignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/isemail/.travis.yml" afterPath="$PROJECT_DIR$/node_modules/isemail/.travis.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/isemail/LICENSE" afterPath="$PROJECT_DIR$/node_modules/isemail/LICENSE" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/isemail/Makefile" afterPath="$PROJECT_DIR$/node_modules/isemail/Makefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/isemail/README.md" afterPath="$PROJECT_DIR$/node_modules/isemail/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/isemail/index.js" afterPath="$PROJECT_DIR$/node_modules/isemail/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/isemail/lib/isemail.js" afterPath="$PROJECT_DIR$/node_modules/isemail/lib/isemail.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/isemail/test/isemail.js" afterPath="$PROJECT_DIR$/node_modules/isemail/test/isemail.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/isemail/test/mocha.opts" afterPath="$PROJECT_DIR$/node_modules/isemail/test/mocha.opts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/isemail/test/tests.json" afterPath="$PROJECT_DIR$/node_modules/isemail/test/tests.json" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -137,7 +136,7 @@
       <file leaf-file-name="manageorder.component.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/angular-src/src/app/components/manageorder/manageorder.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
+            <state relative-caret-position="396">
               <caret line="129" column="0" lean-forward="true" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
               <folding>
                 <element signature="e#0#50#0" expanded="true" />
@@ -371,15 +370,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="manageorder" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mean" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mean" type="462c0819:PsiDirectoryNode" />
-              <item name="angular-src" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="order" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -397,22 +387,8 @@
               <item name="angular-src" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mean" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mean" type="462c0819:PsiDirectoryNode" />
-              <item name="angular-src" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mean" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mean" type="462c0819:PsiDirectoryNode" />
-              <item name="angular-src" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="profile" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mean" type="b2602c69:ProjectViewProjectNode" />
@@ -604,7 +580,7 @@
       <workItem from="1513565526355" duration="4648000" />
       <workItem from="1513599689252" duration="1849000" />
       <workItem from="1513632919251" duration="7247000" />
-      <workItem from="1513683894084" duration="766000" />
+      <workItem from="1513683894084" duration="2477000" />
     </task>
     <task id="LOCAL-00001" summary="Login Part Finished. The back-end of the brand added.">
       <created>1509016308108</created>
@@ -687,7 +663,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="536808000" />
+    <option name="totallyTimeSpent" value="538519000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -704,12 +680,12 @@
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16113745" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286991" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31479642" sideWeight="0.5018431" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.305859" sideWeight="0.50605583" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31479642" sideWeight="0.49815693" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31479642" sideWeight="0.49815693" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.305859" sideWeight="0.49605057" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.305859" sideWeight="0.49394417" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39920557" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1126,7 +1102,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/angular-src/src/app/components/manageorder/manageorder.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
+        <state relative-caret-position="396">
           <caret line="129" column="0" lean-forward="true" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
